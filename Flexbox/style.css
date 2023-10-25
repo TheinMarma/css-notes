@@ -1,0 +1,102 @@
+h1 {
+    text-transform: capitalize;
+}
+
+.item {
+    background-color: brown;
+    padding: 30px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.a {
+    height: 150px;
+}
+
+.c {
+    width: 130px;
+}
+
+.f {
+    height: 100px;
+    width: 100px;
+}
+
+/* All the necessary CSS code for Flaxbox */
+
+/*All the item become side by side*/
+.container {
+    display: flex;
+}
+
+/*Flex direction, "row" is by default*/
+.container {
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
+}
+
+/* Flex Wrap, by defoult "no-wrap" */
+.container {
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+}
+
+/* Shortheand for Flex Direction and Wrap  */
+.container {
+    /* flex-flow: row-reverse wrap; */
+    flex-flow: row wrap;
+}
+
+/* Flex alaignment, Position of center, left, right ect. */
+.container {
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+/* Flex alaign item*/
+.container {
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    align-items: center;
+}
+
+/* Flexbox align content  */
+.container {
+    /* align-content: center; */
+    /* align-content: space-around; */
+    align-content: space-between;
+}
+
+/* Flexbox Order which will decide to show in which position by manualy, Bigger number means more last */
+.a{
+    order: 10;
+}
+
+.b{
+    order: 9;
+}
+
+/* Flex Grow */
+.item{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+/* Flex Basis */
+.a{
+    flex-basis: 100px; /*Better option of min-width:*/
+}
+
+/* flex: flex-grow flex-shrink flex-basis */
+.item{
+    flex: 0 1 100;
+}
