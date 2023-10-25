@@ -1,5 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 h1 {
     text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
 }
 
 .item {
@@ -14,7 +21,9 @@ h1 {
     font-size: 20px;
 }
 
-.a {
+
+/* Specefy some elements size to make all the element in diffrent sizes */
+/* .a {
     height: 150px;
 }
 
@@ -25,7 +34,7 @@ h1 {
 .f {
     height: 100px;
     width: 100px;
-}
+} */
 
 /* All the necessary CSS code for Flaxbox */
 
@@ -34,17 +43,18 @@ h1 {
     display: flex;
 }
 
-/*Flex direction, "row" is by default*/
+/*Flex direction, used for specefy the diraction of all the items "row" is by default*/
 .container {
     /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
     /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 }
 
 /* Flex Wrap, by defoult "no-wrap" */
 .container {
     /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
     flex-wrap: wrap-reverse;
 }
 
@@ -77,24 +87,24 @@ h1 {
 }
 
 /* Flexbox Order which will decide to show in which position by manualy, Bigger number means more last */
-.a{
+/* .a{
     order: 10;
 }
 
 .b{
     order: 9;
-}
+} */
 
 /* Flex Grow */
-.item{
+/* .item{
     flex-grow: 1;
     flex-shrink: 0;
-}
+} */
 
-/* Flex Basis */
-.a{
-    flex-basis: 100px; /*Better option of min-width:*/
-}
+/* Flex Basis, Better option of min-width */
+/* .a{
+    flex-basis: 100px;
+} */
 
 /* flex: flex-grow flex-shrink flex-basis */
 .item{
