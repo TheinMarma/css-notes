@@ -3,6 +3,12 @@
     margin: 0px;
 }
 
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
 .item {
     height: 100px;
     width: 100px;
@@ -15,7 +21,11 @@
     border-radius: 5px;
 }
 
+/* "flex-direction" in CSS is a property that defines the direction in which flex items (elements within a flex container) are placed. It determines whether they should flow horizontally or vertically.  */
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /*top to bottom */
+    flex-direction: column-reverse; /* bottom to top */
+    flex-direction: row; /* left to right */
+    flex-direction: row-reverse; /* right to left */
 }
