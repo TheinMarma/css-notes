@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: brown;
+    /* padding: 30px; */
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.a {
+    height: 100px;
+    width: 150px;
+}
+
+.c {
+    height: 150px;
+    width: 100px;
+}
+
+.d {
+    height: 90px;
+    width: 90px;
+}
+
+.e {
+    width: 200px;
+}
+
+.container{
+    height: 250px;
+}
+
+/*"align-content" in CSS is a property that defines how multiple rows or columns of content are aligned within a flex container or grid container when there's extra space available. It specifies the distribution of space along the cross-axis (vertical in flex containers and both axes in grid containers) when the content doesn't fill the container entirely.*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-evenly;
+}

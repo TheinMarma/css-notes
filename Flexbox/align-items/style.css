@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: brown;
+    padding: 10px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.a {
+    height: 100px;
+    width: 120px;
+}
+
+.c {
+    height: 120px;
+    width: 90px;
+}
+
+.d {
+    height: 70px;
+    width: 70px;
+}
+
+.e {
+    width: 120px;
+}
+
+/*""align-items" is a CSS property used to control how items are vertically aligned within a container. It specifies how the items should be positioned in relation to the container's cross-axis, aligning them at the top, center, or bottom of the container, or stretching them to fill the entire height.*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+}
