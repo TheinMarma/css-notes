@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0px;
     margin: 0px;
 }
@@ -10,15 +10,15 @@ h1 {
 }
 
 .item {
-    height: 100px;
-    width: 100px;
+    background-color: brown;
+    padding: 30px;
+    width: 40px;
+    height: 30px;
     text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-    margin: 5px;
-    background-color: red;
-    border: 1px solid black;
+    border: 5px;
     border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
 }
 
 /* "flex-direction" in CSS is a property that defines the direction in which flex items (elements within a flex container) are placed. It determines whether they should flow horizontally or vertically.  */
