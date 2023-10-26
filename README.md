@@ -1,2 +1,2 @@
 # CSS Notes
- Notes for CSS foe reference 
+ CSS Notes for reference 
