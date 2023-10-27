@@ -63,3 +63,8 @@ body {
     grid-template-rows: repeat(1, 100px);
     grid-auto-rows: 100px;
 } 
+
+/* Items Flow */
+.container{
+    grid-auto-flow: dense; /*fit the item wher got the space*/
+}
