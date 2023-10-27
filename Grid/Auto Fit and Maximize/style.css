@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+  margin: 10px;
+  height: 100vh;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+.item{
+    background-color: aqua;
+}
+
+.one{
+    background-color: blue;
+}
+
+.two{
+    background-color: azure;
+}
+
+.three{
+    background-color: blanchedalmond;
+}
+
+.five{
+    background-color: blueviolet;
+}
+
+.six{
+    background-color: brown;
+}
+
+.eight{
+    background-color: black;
+}
+
+.ten{
+    background-color: beige;
+}
+
+/* Grid Auto Fit */
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 90px);
+
+    /* Auto fit "fit full window with existing item", Minimum 90px and Maximum 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    /* Auto fill create blank space */
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+
+    grid-template-rows: repeat(1, 100px);
+    grid-auto-rows: 100px;
+} 

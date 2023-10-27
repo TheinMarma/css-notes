@@ -1,4 +1,48 @@
-*{
+* {
     border: 0px;
     padding: 0px;
+}
+
+.item {
+    background-color: blue;
+    /* margin: 5px; */
+    padding: 10px;
+}
+
+.b {
+    background-color: aquamarine;
+}
+
+.d {
+    background-color: aqua;
+}
+
+.f {
+    background-color: blueviolet;
+}
+
+.h {
+    background-color: brown;
+}
+
+/* CSS Grid */
+.container {
+    display: grid;
+    /* grid-template-columns: 100px auto 100px; */
+    grid-template-columns: 1fr 3fr;
+    /* grid-template-rows: 150px 150px; */
+    grid-template-rows: 3fr 5fr;
+
+    /* Grid tamplate row and column */
+    grid-template: 150px 150px/1fr 3fr;
+
+    /* Grid Tamplate Repeat */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    /* Used for adding gap in betwin Grid Collum and Row */
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
+    grid-gap: 10px;
+
 }

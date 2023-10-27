@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+  margin: 10px;
+  height: 100vh;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+.item{
+    background-color: aqua;
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+.one{
+    background-color: blue;
+}
+
+.two{
+    background-color: azure;
+}
+
+.three{
+    background-color: blanchedalmond;
+}
+
+.five{
+    background-color: blueviolet;
+}
+
+.six{
+    background-color: brown;
+}
+
+.eight{
+    background-color: black;
+}
+
+.ten{
+    background-color: beige;
+}
+
+/* Grid Alignment, left and right */
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    grid-template-rows: repeat(2, 90px);
+    grid-gap: 5px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* align-items: start; */
+}
+
+
+/* Indevidual Elements Styling */
+.container{
+    /* justify-items: end; */
+    /* justify-items: center; */
+    /* align-items: end; */
+    align-items: center;
+}
+
+/* Self */
+.four{
+    justify-self: end;
+}

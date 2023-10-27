@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.item {
+    background-color: blue;
+    text-transform: uppercase;
+}
+
+.menu {
+    background-color: rgb(77, 77, 78);
+}
+
+.content {
+    background-color: whitesmoke;
+}
+
+/* Grid Styling Start Here */
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px auto 50px;
+    height: 500px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    /* Both could be Writen in Single Line */
+    /* grid-column: 1 / 8; */
+    grid-column: 1 / -1;
+}
+
+.menu {
+    grid-column: 1/2;
+}
+
+.content{
+    grid-column: 2/ span 8;
+}
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    /* Both could be Writen in Single Line */
+    grid-column: 1 / 8;
+}
