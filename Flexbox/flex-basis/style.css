@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: brown;
+    padding: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Flex Basis is semiller to min-width but the better option for responsiveness.  */
+.item {
+    /* min-width: 200px; */
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.b{
+    flex-basis: 60px;
+}
+
+
+
+
+/* The shortcut of flex-grow, flex-shrink and flex-basis */
+.item{
+    flex: 1 1 150px;
+}
+.c{
+    flex-basis: 10px;
+}

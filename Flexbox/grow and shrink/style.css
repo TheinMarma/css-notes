@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: brown;
+    padding: 30px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/*"Flex Grow means increasing the items according to window size. "0" means not to grow and "1" means to grow, Default value is 0*/
+.item{
+    flex-grow: 0;
+    flex-grow: 1;
+}
+
+/* Flex Shrink, decreasing the items size based on window. */
+.item{
+    flex-shrink: 0;
+    flex-shrink: 1;
+}

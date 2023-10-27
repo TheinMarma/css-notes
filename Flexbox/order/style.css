@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: brown;
+    padding: 20px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.a {
+    height: 100px;
+    width: 150px;
+}
+
+.c {
+    height: 150px;
+    width: 100px;
+}
+
+.d {
+    height: 90px;
+    width: 90px;
+}
+
+.e {
+    width: 200px;
+}
+
+.container{
+    height: 250px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*"Order, Bigger nummber means the most last in serial */
+.a{
+    order: 5;
+}
+
+.d{
+    order: 9;
+}
+
+.b{
+    order: 7;
+}
