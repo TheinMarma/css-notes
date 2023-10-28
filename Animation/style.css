@@ -1,0 +1,64 @@
+.container {
+    height: 500px;
+    /* width: 300px; */
+    /* background-color: palevioletred; */
+}
+
+@keyframes move-div {
+    0% {
+        background-color: aliceblue;
+        left: 0%;
+        top: 0%;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        background-color: aqua;
+        left: 50%;
+        top: 50%;
+        /* transform: scale(12); */
+    }
+
+    40% {
+        background-color: black;
+        top: 100%;
+        left: 100%;
+    }
+
+    60% {
+        background-color: blueviolet;
+        top: 100%;
+        left: 0%;
+    }
+
+    80% {
+        background-color: rgb(152, 150, 155);
+        top: 50%;
+        bottom: 50%;
+    }
+
+    100% {
+        background-color: rgb(209, 138, 50);
+        left: 0%;
+        top: 0%;
+        transform: rotate(360deg);
+    }
+}
+
+
+.item {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    animation-name: move-div;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
+
+    /* Short*/
+    animation: move-div 5s linear 3s infinite;
+
+    position: relative;
+}
